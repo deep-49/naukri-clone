@@ -1,11 +1,12 @@
 import React from "react";
+import cs from "../assets/cs.jpg"
 
 const RightSection = () => {
   return (
     <div className="bg-white rounded-lg shadow-md border border-grey-800 overflow-hidden">
             <div className="relative">
               <img 
-                src="/api/placeholder/400/250" 
+                src={cs}
                 alt="Computer Science Jobs"
                 className="w-full h-40 object-cover"
               />
