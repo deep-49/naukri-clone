@@ -64,8 +64,8 @@ const contestsData = [
 
 const Participate= () => {
   return (
-    <div className="max-w-7xl mx-auto px-4 py-8">
-      <div className="grid grid-cols-1 md:grid-cols-12 gap-9
+    <div className=" max-w-8xl mx-auto  px-6 py-8 ">
+      <div className="grid grid-cols-1 md:grid-cols-12 gap-8
 
       ">
         

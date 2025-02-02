@@ -1,12 +1,20 @@
-
+import logo from "../assets/5466500.gif"
 const ContestCard = ({ contest }) => (
     <div className="bg-white border border-grey-800  rounded-3xl shadow-md p-4 hover:shadow-2xl">
       <div className="flex items-start gap-4">
-        <div className="w-12 h-12 bg-blue-600 rounded-lg flex-shrink-0" />
+        <div className="rounded-lg flex-shrink-0">
+        
+        <img 
+          src={logo} 
+          alt="logo"
+          className="h-12 w-12  rounded-lg "
+        />
+        
+        </div>
         <div className="flex-grow">
           <h3 className="text-lg font-semibold mb-1">{contest.title}</h3>
-          <p className="text-gray-500 mb-2">{contest.company}</p>
-          <div className="flex flex-wrap gap-4 text-sm text-gray-600 mb-3">
+          <p className="text-gray-500 text-sm mb-3">{contest.company}</p>
+          <div className="flex flex-wrap gap-x-4 text-sm text-gray-600 mb-3">
             <span>No. round: {contest.roundNo}</span>
             <span>Duration: {contest.duration}, {contest.date}</span>
             <span>Participation: {contest.participation}</span>
@@ -25,7 +33,7 @@ const ContestCard = ({ contest }) => (
             </span>
           </div>
         </div>
-        <div className="bg-yellow-50 px-3  rounded-3xl text-sm">
+        <div className="bg-yellow-50 px-3  self-start rounded-3xl text-sm">
           {contest.type}
         </div>
       </div>
