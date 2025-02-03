@@ -1,6 +1,6 @@
 import logo from "../assets/5466500.gif"
 const ContestCard = ({ contest }) => (
-    <div className="bg-white border border-grey-800  rounded-3xl shadow-md p-4 hover:shadow-2xl">
+    <div className="bg-white border border-grey-800 rounded-3xl shadow-md p-4 hover:shadow-2xl">
       <div className="flex items-start gap-4">
         <div className="rounded-lg flex-shrink-0">
         
@@ -16,7 +16,9 @@ const ContestCard = ({ contest }) => (
           <p className="text-gray-500 text-sm mb-3">{contest.company}</p>
           <div className="flex flex-wrap gap-x-4 text-sm text-gray-600 mb-3">
             <span>No. round: {contest.roundNo}</span>
+            <span className="text-gray-400 hidden md:inline">|</span>
             <span>Duration: {contest.duration}, {contest.date}</span>
+            <span className="text-gray-400 hidden md:inline">|</span>
             <span>Participation: {contest.participation}</span>
           </div>
           <div className="flex flex-wrap gap-2 mb-3">

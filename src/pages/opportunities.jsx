@@ -42,7 +42,7 @@ export default function Opportunities() {
   // Scroll Function
   const scroll = (direction) => {
     if (scrollContainerRef.current) {
-      const scrollAmount = 300; // Adjust as needed
+      const scrollAmount = 300; 
       scrollContainerRef.current.scrollBy({
         left: direction === "right" ? scrollAmount : -scrollAmount,
         behavior: "smooth",
@@ -64,7 +64,7 @@ export default function Opportunities() {
     const container = scrollContainerRef.current;
     if (container) {
       container.addEventListener("scroll", checkScroll);
-      checkScroll(); // Initial check
+      checkScroll(); 
     }
     return () => {
       if (container) {
@@ -94,7 +94,7 @@ export default function Opportunities() {
 
           {/* Scrollable Job Cards Container */}
           <div className="relative">
-            {/* Scrollable Div */}
+            
             <div ref={scrollContainerRef} className="flex gap-4 bg-white p-2 rounded-lg overflow-x-scroll scrollbar-hide scroll-smooth">
               {Array.isArray(companiesData) && companiesData.length > 0 ? (
                 companiesData.map((company) => <CompanyCard key={company.id} company={company} />)
