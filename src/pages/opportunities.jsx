@@ -32,6 +32,20 @@ const companiesData = [
     rating: "3.6",
     reviews: "734 reviews",
   },
+  {
+    id: 5,
+    name: "Atlas Jewellery",
+    logo: "https://img.naukimg.com/logo_images/groups/v1/550568.gif",
+    rating: "NaN",
+    reviews: "6 reviews",
+  },
+  {
+    id: 6,
+    name: "Atlas Jewellery",
+    logo: "https://img.naukimg.com/logo_images/groups/v1/550568.gif",
+    rating: "NaN",
+    reviews: "6 reviews",
+  },
 ];
 
 export default function Opportunities() {
@@ -107,7 +121,7 @@ export default function Opportunities() {
             {canScrollLeft && (
               <button
                 onClick={() => scroll("left")}
-                className="absolute left-0 top-1/2 transform -translate-y-1/2 w-9 h-9 bg-gray-600 rounded-full shadow flex items-center justify-center"
+                className="absolute left-0 top-1/2 transform -translate-y-1/2 w-9 h-9 bg-gray-600  rounded-full shadow flex items-center justify-center"
                 aria-label="Scroll Left"
               >
                 <svg className="w-5 h-5 text-white" fill="none" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">

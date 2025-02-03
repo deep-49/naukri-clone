@@ -3,7 +3,7 @@ import { FaSearch } from "react-icons/fa";
 function Navbar() {
   return (
     <header className="bg-white shadow-md">
-    <div className="container mx-auto px-4 py-4 flex items-center justify-center space-x-6">
+    <div className="container mx-auto  px-4 py-4 flex items-center justify-center space-x-10">
         {/* Logo */}
         <div className="flex items-center">
             <img src="https://static.naukimg.com/s/0/0/i/ni-hamburger/nc_new_logo.svg" alt="Naukri Campus Logo" className="" />

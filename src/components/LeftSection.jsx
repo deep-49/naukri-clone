@@ -15,11 +15,11 @@ const LeftSection = () => {
       
       <h2 className="text-xl font-bold mb-2">Build your profile</h2>
       <p className="text-gray-500 mb-4">Get access to personalised career guidance</p>
-      <div className="space-y-3">
+      <div className=" flex justify-center ">
         <button className="w-[180px] m-1 py-2 px-4 border border-blue-700 text-blue-700 font-semibold rounded-3xl hover:bg-blue-50 transition-colors">
           Log in
         </button>
-        <button className="w-[180px] m-1 py-2 px-4 bg-red-500 text-white rounded-3xl hover:bg-red-600 transition-colors">
+        <button className="w-[180px] m-1 py-2 px-4 bg-red-500 font-normal text-white rounded-3xl hover:bg-red-600 transition-colors">
           Register
         </button>
       </div>
