@@ -96,7 +96,7 @@ export default function Opportunities() {
         </div>
 
         {/* Middle section */}
-        <div className="md:col-span-6 bg-white border border-white rounded-3xl shadow-lg p-7">
+        <div className="md:col-span-6 bg-white border border-white rounded-3xl shadow-lg pt-5 pl-5 pr-5">
           <div className="mb-6">
             <div className="flex justify-between items-center">
               <h2 className="text-xl font-bold">Explore jobs by top companies</h2>
@@ -107,9 +107,9 @@ export default function Opportunities() {
           </div>
 
           {/* Scrollable Job Cards Container */}
-          <div className="relative">
+          <div className="relative ">
             
-            <div ref={scrollContainerRef} className="flex gap-4 bg-white p-2 rounded-lg overflow-x-scroll scrollbar-hide scroll-smooth">
+            <div ref={scrollContainerRef} className="flex gap-4  p-3  overflow-x-scroll scrollbar-hide scroll-smooth">
               {Array.isArray(companiesData) && companiesData.length > 0 ? (
                 companiesData.map((company) => <CompanyCard key={company.id} company={company} />)
               ) : (
@@ -121,7 +121,7 @@ export default function Opportunities() {
             {canScrollLeft && (
               <button
                 onClick={() => scroll("left")}
-                className="absolute left-0 top-1/2 transform -translate-y-1/2 w-9 h-9 bg-gray-600  rounded-full shadow flex items-center justify-center"
+                className="absolute left-0 top-1/2 transform -translate-y-1/2 w-9 h-9 bg-gray-600 bg-opacity-60 rounded-full shadow flex items-center justify-center hover:bg-opacity-80 transition"
                 aria-label="Scroll Left"
               >
                 <svg className="w-5 h-5 text-white" fill="none" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
@@ -134,7 +134,7 @@ export default function Opportunities() {
             {canScrollRight && (
               <button
                 onClick={() => scroll("right")}
-                className="absolute right-0 top-1/2 transform -translate-y-1/2 w-9 h-9 bg-gray-600 rounded-full shadow flex items-center justify-center"
+                className="absolute right-0 top-1/2 transform -translate-y-1/2 w-9 h-9 bg-gray-600 bg-opacity-60 hover:bg-opacity-80 transition rounded-full shadow flex items-center justify-center"
                 aria-label="Scroll Right"
               >
                 <svg className="w-5 h-5 text-white" fill="none" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
