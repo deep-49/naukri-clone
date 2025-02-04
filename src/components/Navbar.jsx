@@ -8,7 +8,7 @@ const DropdownMenu = ({ buttonText, menuItems, isSplit = false }) => {
     <div
       className="relative inline-block"
       onMouseEnter={() => setIsOpen(true)}
-      onMouseLeave={() => setTimeout(() => setIsOpen(false), 300)}
+      onMouseLeave={() => setIsOpen(false)}
     >
       <button className="text-gray-700 hover:text-black relative">
         {buttonText}
