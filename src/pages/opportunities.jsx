@@ -32,6 +32,20 @@ const companiesData = [
     rating: "3.6",
     reviews: "734 reviews",
   },
+  {
+    id: 5,
+    name: "Atlas Jewellery",
+    logo: "https://img.naukimg.com/logo_images/groups/v1/550568.gif",
+    rating: "NaN",
+    reviews: "6 reviews",
+  },
+  {
+    id: 6,
+    name: "Atlas Jewellery",
+    logo: "https://img.naukimg.com/logo_images/groups/v1/550568.gif",
+    rating: "NaN",
+    reviews: "6 reviews",
+  },
 ];
 
 export default function Opportunities() {
@@ -42,7 +56,7 @@ export default function Opportunities() {
   // Scroll Function
   const scroll = (direction) => {
     if (scrollContainerRef.current) {
-      const scrollAmount = 300; // Adjust as needed
+      const scrollAmount = 300; 
       scrollContainerRef.current.scrollBy({
         left: direction === "right" ? scrollAmount : -scrollAmount,
         behavior: "smooth",
@@ -64,7 +78,7 @@ export default function Opportunities() {
     const container = scrollContainerRef.current;
     if (container) {
       container.addEventListener("scroll", checkScroll);
-      checkScroll(); // Initial check
+      checkScroll(); 
     }
     return () => {
       if (container) {
@@ -94,7 +108,7 @@ export default function Opportunities() {
 
           {/* Scrollable Job Cards Container */}
           <div className="relative">
-            {/* Scrollable Div */}
+            
             <div ref={scrollContainerRef} className="flex gap-4 bg-white p-2 rounded-lg overflow-x-scroll scrollbar-hide scroll-smooth">
               {Array.isArray(companiesData) && companiesData.length > 0 ? (
                 companiesData.map((company) => <CompanyCard key={company.id} company={company} />)
@@ -107,7 +121,7 @@ export default function Opportunities() {
             {canScrollLeft && (
               <button
                 onClick={() => scroll("left")}
-                className="absolute left-0 top-1/2 transform -translate-y-1/2 w-9 h-9 bg-gray-600 rounded-full shadow flex items-center justify-center"
+                className="absolute left-0 top-1/2 transform -translate-y-1/2 w-9 h-9 bg-gray-600  rounded-full shadow flex items-center justify-center"
                 aria-label="Scroll Left"
               >
                 <svg className="w-5 h-5 text-white" fill="none" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
