@@ -8,8 +8,8 @@ export default function App(){
   return (
     <>
       <Navbar/>
-      {/* <Participate/> */}
-      <Opportunities/>
+      <Participate/>
+      {/* <Opportunities/> */}
     
      
    
