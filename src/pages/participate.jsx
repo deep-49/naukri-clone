@@ -100,6 +100,15 @@ const Participate= () => {
         </div>
         
       </div>
+      <div className='text-gray-600 text-sm font-normal'>
+        <ol className='flex items-center space-x-1'>
+          <li>Home</li>
+          <li className="text-gray-400">{'>'}</li>
+          <li>Campus</li>
+          <li className="text-gray-400">{'>'}</li>
+          <li>Participate</li>
+        </ol>
+      </div>
     </div>
   );
 };

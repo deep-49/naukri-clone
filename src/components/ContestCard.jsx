@@ -35,7 +35,7 @@ const ContestCard = ({ contest }) => (
           </span>
         </div>
       </div>
-      <div className={`px-3 mr-3 self-start rounded-lg text-grey-700 font-semibold text-sm absolute top-0 right-0 ${contest.type === "Quiz" ? "bg-yellow-50" : "bg-indigo-50"
+      <div className={`px-3 mr-5 self-start rounded-b-xl text-grey-700 font-semibold text-sm absolute top-0 right-0 ${contest.type === "Coding contest" ? "bg-orange-50" : "bg-indigo-50"
         }`}>
         {contest?.type}
       </div>
